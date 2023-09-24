@@ -1,0 +1,18 @@
+Package: collatzR
+Type: Package
+Title: Package for implementing Collatz Conjucture 
+Version: 1.0.0.0
+Date: 2023-09-24
+Authors@R: 
+    person("Sulman", "Owili", , "s.owili@cgiar.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7401-5326"))
+Author: Sulman Owili [aut, cre]
+Maintainer: Sulman Owili <s.owili@cgiar.org>
+Description: A package for exploring and visualizing the Collatz conjecture, a fascinating mathematical sequence. It provides functions for: (1) determining if a number is even or odd, (2) performing the Collatz operation on the selected number, (3) generating Collatz sequences for various starting numbers, and visualizing the seguence for the selected number.
+License: GPL (>= 2)
+Depends: knitr, xfun
+URL: https://github.com/SulmanOlieko/collatzeR
+BugReports: https://github.com/SulmanOlieko/collatzeR
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
