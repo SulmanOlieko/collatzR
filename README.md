@@ -1,8 +1,7 @@
 
 # collatzR
 [![CodeFactor](https://www.codefactor.io/repository/github/sulmanolieko/collatzr/badge)](https://www.codefactor.io/repository/github/sulmanolieko/collatzr)
-[![](https://img.shields.io/badge/license-GPL-blue)](https://github.com/sulmanolieko/collatzr)
-
+[![License](https://img.shields.io/badge/license-GPL-blue)](https://github.com/sulmanolieko/collatzr)
 ## Description
 A package for exploring and visualizing the Collatz conjecture, a fascinating mathematical sequence. It provides functions for:
 - Determining if a number is whole, even, or odd,
