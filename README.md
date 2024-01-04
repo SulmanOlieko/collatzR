@@ -1,51 +1,36 @@
-# CollatzR
-
+# collatzR
 [![CodeFactor](https://www.codefactor.io/repository/github/sulmanolieko/collatzr/badge)](https://www.codefactor.io/repository/github/sulmanolieko/collatzr)
 
 ## Description
+A package for exploring and visualizing the Collatz conjecture, a fascinating mathematical sequence. It provides functions for:
+- Determining if a number is whole, even, or odd,
+- Performing the Collatz operation on the selected number,
+- Generating Collatz sequences for various starting numbers,
+- Generating the maximum value in the Collatz sequence for various starting numbers,
+- Generating the total number of steps in the Collatz sequence required to reach 1 for various starting numbers, and
+- Visualizing the sequence for the selected number.
 
-CollatzR is a package designed for exploring and visualizing the Collatz conjecture, a captivating mathematical sequence. It provides functions for:
-
-1. Determining if a number is whole, even, or odd.
-2. Performing the Collatz operation on the selected number.
-3. Generating Collatz sequences for various starting numbers.
-4. Generating the maximum value in the Collatz sequence for various starting numbers.
-5. Generating the total number of steps in the Collatz sequence required to reach 1 for various starting numbers.
-6. Visualizing the sequence for the selected number.
-
-### The Problem
-
+## The Problem
 Consider an arbitrary positive integer **n**:
-
 - If **n** is even, divide it by 2.
 - Else, if **n** is odd, multiply it by 3 and add 1 to the product.
 
-Therefore, we can define a function \( f^i(n) \) such that:
-
+Therefore, we can define a function f^i(n) such that:
 \[ f(n) = \begin{cases} n/2 & \text{if } n \equiv 0 \mod 2, \\ 3n+1 & \text{if } n \equiv 1 \mod 2. \end{cases} \]
 
 Subsequently, we need to loop the above equation sequentially by taking the result at the previous step as the starting value at the next, such that:
-
-\[ k_i = \begin{cases}
-  n & \text{for } i = 0, \\
-  f(k_{i-1}) & \text{for } i > 0
-\end{cases} \]
+\[ k_i = \begin{cases} n & \text{for } i = 0, \\ f(k_{i-1}) & \text{for } i > 0 \end{cases} \]
 
 The conjecture states that this process will eventually reach the number 1, regardless of which arbitrary positive integer is chosen as the starting (initial) value **n**. Once the process reaches unity, a perpetual loop is reached: 4,3,2,1,4,3,2,1... Therefore, we stop the loop once we reach 1.
 
-Currently, the highest arbitrary integer that has been officially proven to concur with this behavior is \(2^{100,000} - 1\). Can this \(3n + 1\) hold for bigger integers beyond this?
+Currently, the highest arbitrary integer that has been officially proven to concur with this behavior is 2^100,000 - 1. Can this 3n + 1 hold for bigger integers beyond this?
 
-**Note:** Currently, R does not consider values past \(2^{1024}\) as integers, hence the program cannot compute (or visualize) conjecture sequences for starting integers beyond this value.
+**Note:** Currently, R does not consider values past 2^1024 as integers, hence the program cannot compute (or visualize) conjecture sequences for starting integers beyond this value.
 
-## Installing the CollatzR package into R
-
-To install the **CollatzR** package into R, you can follow these steps:
-
+### Installing the CollatzR package into R
+To install the **CollatzR** package into R, you can follow the following procedure:
 1. Ensure you are connected to the internet.
-2. Open your R software and open a new R script.
-3. Install the **devtools** package into your library by running the following code:
-
+2. Open your R software and open a new Rscript. Install **devtools** package into your library. This can be done by typing (or copy-pasting) this code into your R script and running it:
    ```R
-   install.packages("devtools")  # you need devtools package for the installation of packages from Github
-   library(devtools)  # load the devtools package into your library
-
+   install.packages("devtools") # You need devtools package for the installation of packages from Github
+   library(devtools) # Load the devtools package into your library
