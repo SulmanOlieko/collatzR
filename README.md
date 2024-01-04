@@ -10,7 +10,7 @@ A package for exploring and visualizing the Collatz conjecture, a fascinating ma
 <li>generating the total number of steps in the Collatz sequence required to reach 1 for various starting numbers,and </li>
 <li>visualizing the seguence for the selected number.</li>
 </ol>
-#
+
 # Installation
 <code> 
 install.packages("devtools")
