@@ -1,3 +1,4 @@
+```markdown
 # collatzR
 [![CodeFactor](https://www.codefactor.io/repository/github/sulmanolieko/collatzr/badge)](https://www.codefactor.io/repository/github/sulmanolieko/collatzr)
 
@@ -34,27 +35,53 @@ To install the **CollatzR** package into R, you can follow the following procedu
    ```R
    install.packages("devtools") # You need devtools package for the installation of packages from Github
    library(devtools) # Load the devtools package into your library
-3. Use devtools to install the CollatzR package into R.
+   ```
+3. Use **devtools** to install the **CollatzR** package into R.
    ```R
    install_github("SulmanOlieko/collatzR") # Install CollatzR
    library(collatzR) # Load the CollatzR package into R
+   ```
 
-### Usage
-**Generate hailstone sequences**
-You can now generate the hailstone sequences of any arbitrary integer between 1 - 2^1024. To do this, simply type collatz_sequence() and input your integer inside the parentheses and run it. For instance, if I want to see the Collatz sequence for 3732423, I would:
+That's it!
+
+## Usage
+### Generate hailstone sequences
+You can now generate the hailstone sequences of any arbitrary integer between 1 - 2^1024. To do this, simply type `collatz_sequence()` and input your integer inside the parentheses and run it. For instance, if I want to see the Collatz sequence for 123456789, I would:
 ```R
 collatz_sequence(3732423)
+```
 
-**Visualize the plot**
+### Visualize the plot
 To view the plot for this number:
 ```R
 visualize_collatz(3732423)
+```
 
-How many **steps** or **stopping times** are there for this number before reaching 1?
+### How many steps or stopping times are there for this number before reaching 1?
 ```R
 collatz(3732423)
 # Alternatively:
 collatz_sequence(3732423)$step
+```
 
+### Identify the maximum value in the sequence:
+```R
+max_collatz(3732423)
+# Alternatively:
+collatz_sequence(3732423)$max_value
+```
 
+### Other operations
+The **CollatzR** package can also perform operations such as:
+- Determining if a number is odd or even:
+  ```R
+  is.even(3732423)
+  ```
 
+- Determining if a number is whole:
+  ```R
+  is.wholenumber(3732423)
+  ```
+
+Happy interacting with the tool!
+```
