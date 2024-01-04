@@ -11,8 +11,8 @@ A package for exploring and visualizing the Collatz conjecture, a fascinating ma
 <li>visualizing the seguence for the selected number.</li>
 </ol>
 
-      <h3>The problem</h3>
-      <p>Consider an arbitrary positive integer <strong>n</strong>:</p>
+#The problem
+Consider an arbitrary positive integer <strong>n</strong>:
       <ul>
         <li>If <strong>n</strong> is even, divide it by 2.</li>
         <li>Else, if <strong>n</strong> is odd, multiply it by 3 and add 1 to the product.</li>
@@ -24,9 +24,10 @@ A package for exploring and visualizing the Collatz conjecture, a fascinating ma
       n & \text{for } i = 0, \\
       f(k_{i-1}) & \text{for } i > 0
     \end{cases} \)</span></p>
+    
       <p>The conjecture states that this process will eventually reach the number 1, regardless of which arbitrary positive integer is chosen as the starting (initial) value <strong>n</strong>. Once the process reaches unity, a perpetual loop is reached: 4,3,2,1,4,3,2,1... Therefore, we stop the loop once we reach 1.</p>
       <p>Currently, the highest arbitrary integer that has been officially proven to concur with this behaviour is 2<sup>100,000</sup> - 1. Can this 3n + 1 hold for bigger integers beyond this?</p>
-      </div>
+  
       <p><strong>Note: </strong>Currently, R does not consider values past 2<sup>1024</sup> as integers, hence the program cannot compute (or visualize) conjucture sequences for starting integers beyond this value.</p>
     <div class="article-tags badge-light">
       <h3>Installing the CollatzR package into R</h3>
@@ -44,9 +45,9 @@ A package for exploring and visualizing the Collatz conjecture, a fascinating ma
             library(collatzR)#load the CollatzR package into R</code></pre>
         </li>
       </ol>
-      </div>
+#
     <p>That's it!</p>
-    <div class="article-tags badge-light">
+
       <h3>Usage</h3>
       <h4>Generate hailstone sequences</h4>
     <p>You can now generate the hailstone sequences of any arbitrary integer between 1 - 2<sup>1024</sup>. To do this, simply type <code>collatz_sequence()</code> and input your integer inside the parentheses and run it. For instance, if I want to see the Collatz sequence for 123456789, i would: </p>
@@ -77,4 +78,3 @@ A package for exploring and visualizing the Collatz conjecture, a fascinating ma
         </li>
       </ol>
       <p>Happy interacting with the tool!</p>
-    </div>
