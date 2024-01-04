@@ -34,3 +34,11 @@ To install the **CollatzR** package into R, you can follow the following procedu
    ```R
    install.packages("devtools") # You need devtools package for the installation of packages from Github
    library(devtools) # Load the devtools package into your library
+3. Use devtools to install the CollatzR package into R.
+   install_github("SulmanOlieko/collatzR") # Install CollatzR
+   library(collatzR) # Load the CollatzR package into R
+
+**###Usage**
+**Generate hailstone sequences**
+You can now generate the hailstone sequences of any arbitrary integer between 1 - 2^1024. To do this, simply type collatz_sequence() and input your integer inside the parentheses and run it. For instance, if I want to see the Collatz sequence for 123456789, I would:
+
