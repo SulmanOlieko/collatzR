@@ -18,10 +18,10 @@ Consider an arbitrary positive integer **n**:
 - Else, if **n** is odd, multiply it by 3 and add 1 to the product.
 
 Therefore, we can define a function $f^i(n)$ such that:
-$f(n) = \begin{cases} n/2 & \text{if } n \equiv 0 \mod 2, \\ 3n+1 & \text{if } n \equiv 1 \mod 2. \end{cases}$
+$`f(n) = \begin{cases} n/2 & \text{if } n \equiv 0 \mod 2, \\ 3n+1 & \text{if } n \equiv 1 \mod 2. \end{cases}`$
 
 Subsequently, we need to loop the above equation sequentially by taking the result at the previous step as the starting value at the next, such that:
-$$ k_i = \begin{cases} n & \text{for } i = 0, \\ f(k_{i-1}) & \text{for } i > 0 \end{cases} $$
+$` k_i = \begin{cases} n & \text{for } i = 0, \\ f(k_{i-1}) & \text{for } i > 0 \end{cases} `$
 
 The conjecture states that this process will eventually reach the number 1, regardless of which arbitrary positive integer is chosen as the starting (initial) value **n**. Once the process reaches unity, a perpetual loop is reached: 4,3,2,1,4,3,2,1... Therefore, we stop the loop once we reach 1.
 
