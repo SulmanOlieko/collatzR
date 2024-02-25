@@ -48,7 +48,7 @@ That's it!
 
 ## Usage
 ### Generate hailstone sequences
-You can now generate the hailstone sequences of any arbitrary integer between 1 - \( 2^{1024} \). To do this, simply type `collatz_sequence()` and input your integer inside the parentheses and run it. For instance, if I want to see the Collatz sequence for 3732423, I would:
+You can now generate the hailstone sequences of any arbitrary integer between $1 - 2^{1024}$. To do this, simply type `collatz_sequence()` and input your integer inside the parentheses and run it. For instance, if I want to see the Collatz sequence for 3732423, I would:
 ```R
 collatz_sequence(3732423)
 ```
@@ -85,5 +85,4 @@ The **CollatzR** package can also perform operations such as:
   is.wholenumber(3732423)
   ```
 
-Happy interacting with the tool!
-```
+Happy interacting with the package!
