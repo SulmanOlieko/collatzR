@@ -85,4 +85,3 @@ The **CollatzR** package can also perform operations such as:
   ```
 
 Happy interacting with the tool!
-```
