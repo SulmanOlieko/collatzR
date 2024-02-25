@@ -1,4 +1,4 @@
-```markdown
+
 # collatzR
 [![CodeFactor](https://www.codefactor.io/repository/github/sulmanolieko/collatzr/badge)](https://www.codefactor.io/repository/github/sulmanolieko/collatzr)
 [![License](https://img.shields.io/badge/license-GPL-blue)](https://github.com/sulmanolieko/collatzr)
@@ -28,7 +28,7 @@ The conjecture states that this process will eventually reach the number 1, rega
 Currently, the highest arbitrary integer that has been officially proven to concur with this behavior is \( 2^{100,000} - 1 \). Can this \( 3n + 1 \) hold for bigger integers beyond this?
 
 **Note:** Currently, R does not consider values past \( 2^{1024} \) as integers, hence the program cannot compute (or visualize) conjecture sequences for starting integers beyond this value.
-
+```markdown
 ### Installing the CollatzR package into R
 To install the **CollatzR** package into R, you can follow the following procedure:
 1. Ensure you are connected to the internet.
